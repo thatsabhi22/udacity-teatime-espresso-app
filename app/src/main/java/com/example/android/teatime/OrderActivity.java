@@ -25,6 +25,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.NumberFormat;
 
@@ -293,6 +294,11 @@ public class OrderActivity extends AppCompatActivity {
      * and a new intent opens the the {@link OrderSummaryActivity}
      */
     public void brewTea(View view) {
+
+        if(mQuantity < 1){
+            Toast.makeText(this,"Please order atleast One unit",Toast.LENGTH_LONG).show();
+            return;
+        }
         // Create a new intent to open the {@link OrderSummaryActivity}
         Intent intent = new Intent(OrderActivity.this, OrderSummaryActivity.class);
         intent.putExtra(EXTRA_TOTAL_PRICE, mTotalPrice);

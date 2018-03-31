@@ -48,28 +48,37 @@
     <string name="sweet_type_75">75% - Moderately Sweet</string>
     <string name="sweet_type_100">100% - Full Sweetness</string>
 
+    <!--Constants -->
+    <string name="newline">\n</string>
 
     <!--OrderSummaryActivity summary values-->
-    <string name="order_summary"/>
+    <string name="order_summary">Order Summary</string>
     <string name="total">Total</string>
     <string name="summary_tea_label">Tea Type</string>
+    <string name="summary_tea_label_with_colon">Tea Type : </string>
     <string name="summary_size_label">Size</string>
+    <string name="summary_size_label_with_colon">Size : </string>
     <string name="summary_milk_label">Milk Type</string>
+    <string name="summary_milk_label_with_colon">Milk Type : </string>
     <string name="summary_sugar_label">Sugar Amount</string>
+    <string name="summary_sugar_label_with_colon">Sugar Amount : </string>
     <string name="summary_total_label">Order Total</string>
+    <string name="summary_total_label_with_colon">Order Total : </string>
     <string name="summary_quantity_label">Quantity</string>
+    <string name="summary_quantity_label_with_colon">Quantity : </string>
+    <string name="summary_price_label_with_colon">Price : </string>
+    <string name="thank_you">Thank You !!</string>
 
 
     <!--OrderSummary Email Values-->
-    <string name="summary_email_prompt">Let your friends know you just ordered a delicious tea from TeaTime and they can too!</string>
+    <string name="summary_email_prompt">Let your friends know you just ordered a delicious tea
+        from TeaTime and they can too!</string>
     <string name="send_email">Send Email</string>
     <string name="order_summary_email_subject">Freshly Brewed from TeaTime</string>
-    <string name="email_message">I just ordered a delicious tea from TeaTime. Next time you are craving a tea, check them out!</string>
-
+    <string name="email_message">Please prepare the following order quickly!!</string>
 
     <!--Loading message-->
     <string name="done_msg">Your tea is ready!</string>
-
 
     <!--Spinner Options-->
     <string-array name="tea_size_array">

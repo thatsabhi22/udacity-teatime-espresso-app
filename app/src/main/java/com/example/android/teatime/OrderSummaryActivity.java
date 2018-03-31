@@ -27,6 +27,9 @@ import java.text.NumberFormat;
 
 public class OrderSummaryActivity extends AppCompatActivity {
 
+    int price, quantity;
+    String teaName, size, milkType, sugarType;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,12 +39,12 @@ public class OrderSummaryActivity extends AppCompatActivity {
         getSupportActionBar().setTitle(getString(R.string.order_summary_title));
 
         Intent intent = getIntent();
-        String teaName = intent.getStringExtra(OrderActivity.EXTRA_TEA_NAME);
-        int price = intent.getIntExtra(OrderActivity.EXTRA_TOTAL_PRICE, 0);
-        String size = intent.getStringExtra(OrderActivity.EXTRA_SIZE);
-        String milkType = intent.getStringExtra(OrderActivity.EXTRA_MILK_TYPE);
-        String sugarType = intent.getStringExtra(OrderActivity.EXTRA_SUGAR_TYPE);
-        int quantity = intent.getIntExtra(OrderActivity.EXTRA_QUANTITY, 0);
+        teaName = intent.getStringExtra(OrderActivity.EXTRA_TEA_NAME);
+        price = intent.getIntExtra(OrderActivity.EXTRA_TOTAL_PRICE, 0);
+        size = intent.getStringExtra(OrderActivity.EXTRA_SIZE);
+        milkType = intent.getStringExtra(OrderActivity.EXTRA_MILK_TYPE);
+        sugarType = intent.getStringExtra(OrderActivity.EXTRA_SUGAR_TYPE);
+        quantity = intent.getIntExtra(OrderActivity.EXTRA_QUANTITY, 0);
 
         displayOrderSummary(teaName, price, size, milkType, sugarType, quantity);
     }
@@ -56,7 +59,7 @@ public class OrderSummaryActivity extends AppCompatActivity {
      * @param sugarType amount of sugar to add
      */
     private void displayOrderSummary(String teaName, int price, String size, String milkType,
-            String sugarType, int quantity) {
+                                     String sugarType, int quantity) {
 
         // Set tea name in order summary
         TextView teaNameTextView = (TextView) findViewById(
@@ -99,7 +102,33 @@ public class OrderSummaryActivity extends AppCompatActivity {
 
     public void sendEmail(View view) {
 
-        String emailMessage = getString(R.string.email_message);
+        StringBuilder emailMessage = new StringBuilder();
+        emailMessage.append(getString(R.string.email_message));
+        emailMessage.append(getString(R.string.newline));
+        emailMessage.append(getString(R.string.newline));
+        emailMessage.append(getString(R.string.order_summary));
+        emailMessage.append(getString(R.string.newline));
+        emailMessage.append(getString(R.string.newline));
+        emailMessage.append(getString(R.string.summary_tea_label_with_colon));
+        emailMessage.append(teaName);
+        emailMessage.append(getString(R.string.newline));
+        emailMessage.append(getString(R.string.summary_size_label_with_colon));
+        emailMessage.append(size);
+        emailMessage.append(getString(R.string.newline));
+        emailMessage.append(getString(R.string.summary_milk_label_with_colon));
+        emailMessage.append(milkType);
+        emailMessage.append(getString(R.string.newline));
+        emailMessage.append(getString(R.string.summary_sugar_label_with_colon));
+        emailMessage.append(sugarType);
+        emailMessage.append(getString(R.string.newline));
+        emailMessage.append(getString(R.string.summary_quantity_label_with_colon));
+        emailMessage.append(quantity);
+        emailMessage.append(getString(R.string.newline));
+        emailMessage.append(getString(R.string.summary_price_label_with_colon));
+        emailMessage.append(price);
+        emailMessage.append(getString(R.string.newline));
+        emailMessage.append(getString(R.string.newline));
+        emailMessage.append(getString(R.string.thank_you));
 
         // Use an intent to launch an email app.
         // Send the order summary in the email body.
@@ -107,12 +136,10 @@ public class OrderSummaryActivity extends AppCompatActivity {
         intent.setData(Uri.parse("mailto:")); // only email apps should handle this
         intent.putExtra(Intent.EXTRA_SUBJECT,
                 getString(R.string.order_summary_email_subject));
-        intent.putExtra(Intent.EXTRA_TEXT, emailMessage);
+        intent.putExtra(Intent.EXTRA_TEXT, emailMessage.toString());
 
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
-
         }
     }
-
 }
