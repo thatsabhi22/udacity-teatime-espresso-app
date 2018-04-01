@@ -47,11 +47,6 @@ public class TeaMenuAdapter extends ArrayAdapter<Tea> {
         this.data = data;
     }
 
-    static class ViewHolder {
-        TextView imageTitle;
-        ImageView image;
-    }
-
     @Override
     // Create a new ImageView for each item referenced by the Adapter
     public View getView(int position, View convertView, ViewGroup parent) {
@@ -68,12 +63,18 @@ public class TeaMenuAdapter extends ArrayAdapter<Tea> {
             holder.image = (ImageView) convertView.findViewById(R.id.image);
             convertView.setTag(holder);
         } else {
-            holder = (ViewHolder) convertView.getTag();;
+            holder = (ViewHolder) convertView.getTag();
+            ;
         }
 
         holder.imageTitle.setText(currentTea.getTeaName());
         holder.image.setImageResource(currentTea.getImageResourceId());
         return convertView;
+    }
+
+    static class ViewHolder {
+        TextView imageTitle;
+        ImageView image;
     }
 
 }

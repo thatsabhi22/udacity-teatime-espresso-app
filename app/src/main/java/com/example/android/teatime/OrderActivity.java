@@ -32,29 +32,24 @@ import java.text.NumberFormat;
 public class OrderActivity extends AppCompatActivity {
 
 
-    private int mQuantity = 0;
-    private int mTotalPrice = 0;
-
-    private static final int SMALL_PRICE = 5;
-    private static final int MEDIUM_PRICE = 6;
-    private static final int LARGE_PRICE = 7;
-
-    private static final String TEA_SIZE_SMALL = "Small ($5/cup)";
-    private static final String TEA_SIZE_MEDIUM = "Medium ($6/cup)";
-    private static final String TEA_SIZE_LARGE = "Large ($7/cup)";
-
-    private String mMilkType;
-    private String mSugarType;
-    private String mTeaName = "";
-
-    private String mSize;
-
     public final static String EXTRA_TOTAL_PRICE = "com.example.android.teatime.EXTRA_TOTAL_PRICE";
     public final static String EXTRA_TEA_NAME = "com.example.android.teatime.EXTRA_TEA_NAME";
     public final static String EXTRA_SIZE = "com.example.android.teatime.EXTRA_SIZE";
     public final static String EXTRA_MILK_TYPE = "com.example.android.teatime.EXTRA_MILK_TYPE";
     public final static String EXTRA_SUGAR_TYPE = "com.example.android.teatime.EXTRA_SUGAR_TYPE";
     public final static String EXTRA_QUANTITY = "com.example.android.teatime.EXTRA_QUANTITY";
+    private static final int SMALL_PRICE = 5;
+    private static final int MEDIUM_PRICE = 6;
+    private static final int LARGE_PRICE = 7;
+    private static final String TEA_SIZE_SMALL = "Small ($5/cup)";
+    private static final String TEA_SIZE_MEDIUM = "Medium ($6/cup)";
+    private static final String TEA_SIZE_LARGE = "Large ($7/cup)";
+    private int mQuantity = 0;
+    private int mTotalPrice = 0;
+    private String mMilkType;
+    private String mSugarType;
+    private String mTeaName = "";
+    private String mSize;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -295,8 +290,8 @@ public class OrderActivity extends AppCompatActivity {
      */
     public void brewTea(View view) {
 
-        if(mQuantity < 1){
-            Toast.makeText(this,"Please order atleast One unit",Toast.LENGTH_LONG).show();
+        if (mQuantity < 1) {
+            Toast.makeText(this, "Please order atleast One unit", Toast.LENGTH_LONG).show();
             return;
         }
         // Create a new intent to open the {@link OrderSummaryActivity}

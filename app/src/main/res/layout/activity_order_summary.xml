@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--Copyright (C) 2017 The Android Open Source Project
+<?xml version="1.0" encoding="utf-8"?><!--Copyright (C) 2017 The Android Open Source Project
  Licensed under the Apache License, Version 2.0 (the "License");
  you may not use this file except in compliance with the License.
  You may obtain a copy of the License at
@@ -12,8 +11,7 @@
 
 <!--Layout for Order Summary Activity-->
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -25,7 +23,7 @@
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
         android:theme="@style/ToolbarTheme"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
 
     <LinearLayout
         android:id="@+id/activity_order_summary"
@@ -44,7 +42,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             android:layout_margin="10dp"
-            android:text="@string/done_msg"/>
+            android:text="@string/done_msg" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -59,16 +57,16 @@
                 android:layout_alignParentStart="true"
                 android:layout_margin="10dp"
                 android:text="@string/summary_tea_label"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/summary_tea_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
                 android:layout_gravity="end"
-                android:layout_margin="10dp"/>
+                android:layout_margin="10dp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -84,16 +82,16 @@
                 android:layout_alignParentStart="true"
                 android:layout_margin="10dp"
                 android:text="@string/summary_quantity_label"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/summary_quantity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
                 android:layout_gravity="end"
-                android:layout_margin="10dp"/>
+                android:layout_margin="10dp" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -109,16 +107,16 @@
                 android:layout_alignParentStart="true"
                 android:layout_margin="10dp"
                 android:text="@string/summary_size_label"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/summary_tea_size"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
                 android:layout_gravity="end"
-                android:layout_margin="10dp"/>
+                android:layout_margin="10dp" />
         </RelativeLayout>
 
 
@@ -131,20 +129,20 @@
                 android:id="@+id/summary_milk_label"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:layout_margin="10dp"
                 android:text="@string/summary_milk_label"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/summary_milk_type"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
                 android:layout_gravity="end"
-                android:layout_margin="10dp"/>
+                android:layout_margin="10dp" />
         </RelativeLayout>
 
 
@@ -160,19 +158,19 @@
                 android:layout_alignParentLeft="true"
                 android:layout_margin="10dp"
                 android:text="@string/summary_sugar_label"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/summary_sugar_amount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
                 android:layout_gravity="end"
-                android:layout_margin="10dp"/>
+                android:layout_margin="10dp" />
         </RelativeLayout>
 
-        <View style="@style/Divider"/>
+        <View style="@style/Divider" />
 
 
         <RelativeLayout
@@ -182,25 +180,25 @@
 
             <TextView
                 android:id="@+id/summary_total_label"
-                android:textStyle="bold"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:text="@string/summary_total_label"/>
+                android:text="@string/summary_total_label"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/summary_total_price"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
                 android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
                 android:layout_gravity="end"
-                android:layout_margin="10dp"/>
+                android:layout_margin="10dp" />
         </RelativeLayout>
 
     </LinearLayout>
 
-    <View style="@style/Thick_Divider"/>
+    <View style="@style/Thick_Divider" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -215,16 +213,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/summary_email_prompt"/>
+            android:text="@string/summary_email_prompt" />
 
         <Button
             android:id="@+id/send_email_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="sendEmail"
-            android:text="@string/send_email"
             android:layout_below="@+id/summary_email_prompt"
-            android:layout_centerHorizontal="true"/>
+            android:layout_centerHorizontal="true"
+            android:onClick="sendEmail"
+            android:text="@string/send_email" />
 
     </RelativeLayout>
 </LinearLayout>
