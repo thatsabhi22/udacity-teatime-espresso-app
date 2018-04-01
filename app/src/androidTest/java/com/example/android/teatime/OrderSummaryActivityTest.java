@@ -29,7 +29,18 @@ import static org.hamcrest.core.IsNot.not;
 @RunWith(AndroidJUnit4.class)
 public class OrderSummaryActivityTest {
 
-    private static final String emailMessage = "I just ordered a delicious tea from TeaTime. Next time you are craving a tea, check them out!";
+    private static final String emailMessage = "Please prepare the following order quickly!!\n" +
+            "\n" +
+            "Order Summary\n" +
+            "\n" +
+            "Tea Type :null\n" +
+            "Size :null\n" +
+            "Milk Type :null\n" +
+            "Sugar Amount :null\n" +
+            "Quantity :0\n" +
+            "Price :0\n" +
+            "\n" +
+            "Thank You !!";
 
     /**
      * This test demonstrates Espresso Intents using the IntentsTestRule, a class that extends
