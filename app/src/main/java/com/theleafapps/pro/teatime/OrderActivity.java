@@ -303,6 +303,7 @@ public class OrderActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_SUGAR_TYPE, mSugarType);
         intent.putExtra(EXTRA_QUANTITY, mQuantity);
 
+        finish();
         startActivity(intent);
     }
 }

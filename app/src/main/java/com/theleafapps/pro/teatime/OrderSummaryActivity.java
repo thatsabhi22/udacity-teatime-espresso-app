@@ -140,6 +140,7 @@ public class OrderSummaryActivity extends AppCompatActivity {
 
         if (intent.resolveActivity(getPackageManager()) != null) {
             startActivity(intent);
+            finish();
         }
     }
 }
