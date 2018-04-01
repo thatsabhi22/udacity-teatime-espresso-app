@@ -79,6 +79,7 @@
 
     <!--Loading message-->
     <string name="done_msg">Your tea is ready!</string>
+    <string name="minOrderMessage">Please order atleast One unit</string>
 
     <!--Spinner Options-->
     <string-array name="tea_size_array">

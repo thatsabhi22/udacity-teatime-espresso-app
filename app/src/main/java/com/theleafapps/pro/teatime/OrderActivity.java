@@ -290,7 +290,7 @@ public class OrderActivity extends AppCompatActivity {
     public void brewTea(View view) {
 
         if (mQuantity < 1) {
-            Toast.makeText(this, "Please order atleast One unit", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, getString(R.string.minOrderMessage), Toast.LENGTH_LONG).show();
             return;
         }
         // Create a new intent to open the {@link OrderSummaryActivity}
