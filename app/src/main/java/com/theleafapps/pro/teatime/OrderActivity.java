@@ -32,12 +32,12 @@ import java.text.NumberFormat;
 public class OrderActivity extends AppCompatActivity {
 
 
-    public final static String EXTRA_TOTAL_PRICE = "com.example.android.teatime.EXTRA_TOTAL_PRICE";
-    public final static String EXTRA_TEA_NAME = "com.example.android.teatime.EXTRA_TEA_NAME";
-    public final static String EXTRA_SIZE = "com.example.android.teatime.EXTRA_SIZE";
-    public final static String EXTRA_MILK_TYPE = "com.example.android.teatime.EXTRA_MILK_TYPE";
-    public final static String EXTRA_SUGAR_TYPE = "com.example.android.teatime.EXTRA_SUGAR_TYPE";
-    public final static String EXTRA_QUANTITY = "com.example.android.teatime.EXTRA_QUANTITY";
+    public final static String EXTRA_TOTAL_PRICE = "com.theleafapps.pro.teatime.EXTRA_TOTAL_PRICE";
+    public final static String EXTRA_TEA_NAME = "com.theleafapps.pro.teatime.EXTRA_TEA_NAME";
+    public final static String EXTRA_SIZE = "com.theleafapps.pro.teatime.EXTRA_SIZE";
+    public final static String EXTRA_MILK_TYPE = "com.theleafapps.pro.teatime.EXTRA_MILK_TYPE";
+    public final static String EXTRA_SUGAR_TYPE = "com.theleafapps.pro.teatime.EXTRA_SUGAR_TYPE";
+    public final static String EXTRA_QUANTITY = "com.theleafapps.pro.teatime.EXTRA_QUANTITY";
     private static final int SMALL_PRICE = 5;
     private static final int MEDIUM_PRICE = 6;
     private static final int LARGE_PRICE = 7;
@@ -117,7 +117,6 @@ public class OrderActivity extends AppCompatActivity {
                 mSize = getString(R.string.tea_size_small);
             }
         });
-
     }
 
 

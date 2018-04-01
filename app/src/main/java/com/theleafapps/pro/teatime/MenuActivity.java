@@ -30,7 +30,7 @@ import java.util.ArrayList;
 
 public class MenuActivity extends AppCompatActivity {
 
-    public final static String EXTRA_TEA_NAME = "com.example.android.teatime.EXTRA_TEA_NAME";
+    public final static String EXTRA_TEA_NAME = "com.theleafapps.pro.teatime.EXTRA_TEA_NAME";
     Intent mTeaIntent;
 
     @Override
