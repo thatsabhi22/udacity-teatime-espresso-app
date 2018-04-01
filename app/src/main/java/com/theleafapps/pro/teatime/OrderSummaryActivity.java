@@ -18,6 +18,7 @@ package com.theleafapps.pro.teatime;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -36,7 +37,9 @@ public class OrderSummaryActivity extends AppCompatActivity {
         setContentView(R.layout.activity_order_summary);
         Toolbar menuToolbar = (Toolbar) findViewById(R.id.order_summary_toolbar);
         setSupportActionBar(menuToolbar);
-        getSupportActionBar().setTitle(getString(R.string.order_summary_title));
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle(getString(R.string.order_summary_title));
+        actionBar.setIcon(R.mipmap.ic_launcher);
 
         Intent intent = getIntent();
         teaName = intent.getStringExtra(OrderActivity.EXTRA_TEA_NAME);

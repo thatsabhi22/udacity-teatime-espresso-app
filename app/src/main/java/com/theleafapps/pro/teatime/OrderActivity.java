@@ -18,6 +18,7 @@ package com.theleafapps.pro.teatime;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -57,7 +58,9 @@ public class OrderActivity extends AppCompatActivity {
         setContentView(R.layout.activity_order);
         Toolbar menuToolbar = (Toolbar) findViewById(R.id.order_toolbar);
         setSupportActionBar(menuToolbar);
-        getSupportActionBar().setTitle(getString(R.string.order_title));
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle(getString(R.string.order_title));
+        actionBar.setIcon(R.mipmap.ic_launcher);
 
         // Set header name and image depending on which item was clicked in the gridView
         Intent intent = getIntent();

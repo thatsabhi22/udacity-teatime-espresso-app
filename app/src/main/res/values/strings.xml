@@ -12,7 +12,7 @@
     <string name="app_name">TeaTime</string>
 
     <!--Activity Toolbar Titles-->
-    <string name="menu_title">Menu</string>
+    <string name="menu_title">Teatime - Menu</string>
     <string name="order_title">Order</string>
     <string name="order_summary_title">Order Summary</string>
 
@@ -71,9 +71,8 @@
 
 
     <!--OrderSummary Email Values-->
-    <string name="summary_email_prompt">Let your friends know you just ordered a delicious tea
-        from TeaTime and they can too!</string>
-    <string name="send_email">Send Email</string>
+    <string name="summary_email_prompt">Let the team serve you the delicious tea from TeaTime</string>
+    <string name="send_email">Send Order Email</string>
     <string name="order_summary_email_subject">Freshly Brewed from TeaTime</string>
     <string name="email_message">Please prepare the following order quickly!!</string>
 

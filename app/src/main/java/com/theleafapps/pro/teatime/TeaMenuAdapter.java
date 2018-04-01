@@ -64,7 +64,6 @@ public class TeaMenuAdapter extends ArrayAdapter<Tea> {
             convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
-            ;
         }
 
         holder.imageTitle.setText(currentTea.getTeaName());
@@ -76,5 +75,4 @@ public class TeaMenuAdapter extends ArrayAdapter<Tea> {
         TextView imageTitle;
         ImageView image;
     }
-
 }
