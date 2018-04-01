@@ -14,7 +14,7 @@
 * limitations under the License.
 */
 
-package com.example.android.teatime;
+package com.theleafapps.pro.teatime;
 
 import android.content.Intent;
 import android.os.Bundle;

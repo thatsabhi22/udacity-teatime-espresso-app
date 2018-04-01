@@ -14,31 +14,15 @@
 * limitations under the License.
 */
 
-package com.example.android.teatime.model;
+package com.theleafapps.pro.teatime;
 
+import static org.junit.Assert.assertEquals;
 
 /**
- * {@link Tea} represents a tea that the user can select from the menu.
- * It contains a tea name and an associated.
+ * This is an example instrumentation test, which will execute on an Android device.
+ *
+ * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
-
-public class Tea {
-
-    private String mTeaName;
-    private int mImageResourceId;
-
-    public Tea(String teaName, int imageResourceId) {
-        mTeaName = teaName;
-        mImageResourceId = imageResourceId;
-    }
-
-    public String getTeaName() {
-        return mTeaName;
-    }
-
-    public int getImageResourceId() {
-        return mImageResourceId;
-    }
+public class ExampleInstrumentedTest {
 
 }
-

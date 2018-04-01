@@ -1,4 +1,4 @@
-package com.example.android.teatime;
+package com.theleafapps.pro.teatime;
 
 /**
  * Created by aviator on 28/01/18.

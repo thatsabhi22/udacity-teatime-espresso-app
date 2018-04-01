@@ -14,7 +14,7 @@
 * limitations under the License.
 */
 
-package com.example.android.teatime;
+package com.theleafapps.pro.teatime;
 
 import android.app.Activity;
 import android.content.Context;
@@ -25,7 +25,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.android.teatime.model.Tea;
+import com.theleafapps.pro.teatime.model.Tea;
 
 import java.util.ArrayList;
 

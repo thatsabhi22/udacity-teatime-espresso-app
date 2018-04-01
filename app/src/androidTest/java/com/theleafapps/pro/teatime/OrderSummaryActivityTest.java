@@ -1,4 +1,4 @@
-package com.example.android.teatime;
+package com.theleafapps.pro.teatime;
 
 import android.app.Activity;
 import android.app.Instrumentation;

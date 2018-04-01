@@ -1,4 +1,4 @@
-package com.example.android.teatime;
+package com.theleafapps.pro.teatime;
 
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;

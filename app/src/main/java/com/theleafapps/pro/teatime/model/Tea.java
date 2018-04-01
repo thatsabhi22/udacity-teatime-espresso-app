@@ -14,22 +14,31 @@
 * limitations under the License.
 */
 
-package com.example.android.teatime;
+package com.theleafapps.pro.teatime.model;
 
-import static org.junit.Assert.assertEquals;
-
-import android.content.Context;
-import android.support.test.InstrumentationRegistry;
-import android.support.test.runner.AndroidJUnit4;
-
-import org.junit.Test;
-import org.junit.runner.RunWith;
 
 /**
- * This is an example instrumentation test, which will execute on an Android device.
- *
- * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
+ * {@link Tea} represents a tea that the user can select from the menu.
+ * It contains a tea name and an associated.
  */
-public class ExampleInstrumentedTest {
+
+public class Tea {
+
+    private String mTeaName;
+    private int mImageResourceId;
+
+    public Tea(String teaName, int imageResourceId) {
+        mTeaName = teaName;
+        mImageResourceId = imageResourceId;
+    }
+
+    public String getTeaName() {
+        return mTeaName;
+    }
+
+    public int getImageResourceId() {
+        return mImageResourceId;
+    }
 
 }
+
